@@ -2,7 +2,7 @@
 <h1 align="center">Hi 👋, I'm Phoeyuh</h1>
 <h3 align="center">A young Italian developer</h3>
 <h3 align="left">Connect with me:</h3>
-<p>- 📫 How to reach me <a href="kevinbaxofficial@gmail.com"><b>kevinbaxofficial@gmail.com</b></a></p>
+<p>- 📫 How to reach me <a href="mailto:kevinbaxofficial@gmail.com"><b>kevinbaxofficial@gmail.com</b></a></p>
 
 <p align="left">
 <a href="https://instagram.com/kkkbax" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="kkkbax" height="30" width="40" /></a>
