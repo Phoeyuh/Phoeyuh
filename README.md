@@ -5,7 +5,8 @@
 <img src="https://i.pinimg.com/originals/23/15/2a/23152ad938857f99ee19485d608ef091.gif" align="right" height="110" width="110" alt="GIF">
 <img src="https://i.pinimg.com/originals/23/15/2a/23152ad938857f99ee19485d608ef091.gif" align="right" height="110" width="110" alt="GIF">
 <img src="https://i.pinimg.com/originals/23/15/2a/23152ad938857f99ee19485d608ef091.gif" align="right" height="110" width="110" alt="GIF">
-<p>- 📫 How to reach me <a href="mailto:kevinbaxofficial@gmail.com"><b>kevinbaxofficial@gmail.com</b></a></p>
+<p>- 📫 How to reach me <a href="mailto:kevinbaxofficial@gmail.com"><b>kevinbaxofficial@gmail.com</b></a><br>
+- 💻<b>MacOS</b></p>
 
 <p align="left">
 <a href="https://instagram.com/kkkbax" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="kkkbax" height="50" width="40" /></a>
