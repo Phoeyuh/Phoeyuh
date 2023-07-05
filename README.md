@@ -3,8 +3,6 @@
 <h3 align="center">A young Italian developer</h3>
 <h3 align="left">Connect with me:</h3>
 <img src="https://i.pinimg.com/originals/23/15/2a/23152ad938857f99ee19485d608ef091.gif" align="right" height="110" width="110" alt="GIF">
-<img src="https://i.pinimg.com/originals/23/15/2a/23152ad938857f99ee19485d608ef091.gif" align="right" height="110" width="110" alt="GIF">
-<img src="https://i.pinimg.com/originals/23/15/2a/23152ad938857f99ee19485d608ef091.gif" align="right" height="110" width="110" alt="GIF">
 <p>- 📫 How to reach me <a href="mailto:kevinbaxofficial@gmail.com"><b>kevinbaxofficial@gmail.com</b></a><br>
 - 💻<b>MacOS</b></p>
 
