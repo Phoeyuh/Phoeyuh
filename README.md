@@ -13,5 +13,5 @@
 <br>
 
 <p align="center">
-  <img align="center" heigh="1000" width="1000" src="https://github.com/phoeyuh/phoeyuh/blob/output/github-contribution-grid-snake.svg" alt="instagram/kkkbax"/>
+  <img align="center" width="1000" src="https://github.com/phoeyuh/phoeyuh/blob/output/github-contribution-grid-snake.svg" alt="instagram/kkkbax"/>
 </p>
