@@ -12,4 +12,6 @@
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=phoeyuh&show_icons=true&theme=dark&hide_border=true&locale=en&layout=compact" alt="phoeyuh" /></p>
 <br>
 
-![snake gif](https://github.com/phoeyuh/phoeyuh/blob/output/github-contribution-grid-snake.svg)
+<p align="center">
+  <img align="center" heigh="1000" width="1000" src="https://github.com/phoeyuh/phoeyuh/blob/output/github-contribution-grid-snake.svg" alt="instagram/kkkbax"/>
+</p>
