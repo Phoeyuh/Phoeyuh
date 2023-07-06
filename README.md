@@ -2,7 +2,7 @@
 
 # 🏄‍♂️ Hi there, I'm Kevin - aka Phoeyuh 👋 
 
-I am a young Italian boy of 17yo. I enjoy creating projects and learning new things every day. Currently, I am attending the fourth year of high school and studying computer science. In my free time, apart from programming, I create 3D models.
+I am a young Italian boy of 17yo. I enjoy creating projects and learning new things every day. Currently, i am in my fourth year of high school and I have 1y+ experience. In my free time, apart from programming, I create 3D models.
 
 **`[Developer/3D artist/Student]`**
 
