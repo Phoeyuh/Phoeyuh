@@ -2,9 +2,9 @@
 
 # 🏄‍♂️ Hi there, I'm Kevin - aka Phoeyuh 👋 
 
-I am a young Italian boy of 17yo. I enjoy creating projects and learning new things every day. Currently, I am attending the fourth year of high school and studying computer science. In my free time, apart from programming, I create 3D models, specifically logos and weapons for video games.
+I am a young Italian boy of 17yo. I enjoy creating projects and learning new things every day. Currently, I am attending the fourth year of high school and studying computer science. In my free time, apart from programming, I create 3D models.
 
-**`Digital Craftsman (Developer/3D artist/Student)`**
+**`[Developer/3D artist/Student]`**
 
 <p align="left">
   <a href="https://github.com/Phoeyuh?tab=followers">
@@ -28,8 +28,11 @@ I am a young Italian boy of 17yo. I enjoy creating projects and learning new thi
 - ⚡ Fun fact: I have an headgehog
 - 📫 Contact me here <a href="mailto:kevinbaxofficial@gmail.com"><b>kevinbaxofficial@gmail.com</b></a>
 
+#
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=phoeyuh&show_icons=true&theme=dark&hide_border=true&locale=en" alt="phoeyuh"/><br><br>
+<details>
+ <summary><h3>📊 My Stats</h3></summary>
+   <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=phoeyuh&show_icons=true&theme=dark&hide_border=true&locale=en" alt="phoeyuh"/><br><br>
   <img src="https://github.com/Phoeyuh/Phoeyuh/assets/113254295/260e0f3b-075d-4417-9915-fcc59aa24b97" align="left" height="120" width="120" alt="GIF">
   <img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=phoeyuh&show_icons=true&theme=dark&hide_border=true&locale=en&layout=compact" alt="phoeyuh" /></p>
 <br>
