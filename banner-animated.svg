@@ -1,0 +1,93 @@
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" 
+width="347" height="76" viewBox="0 0 347 76"
+preserveAspectRatio="xMidYMid meet">
+<style>
+    :root {
+        --stroke-color: #454545;
+        --fill-color: #454545;
+        --bg-color: #121315;
+        --glow-color: rgba(249, 248, 113, 0.3);
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --stroke-color: #e6e6e6;
+            --fill-color: #e6e6e6;
+            --bg-color: #121821;
+            --glow-color: rgba(201, 247, 130, 0.3);
+        }
+    }
+
+    .letter {
+        stroke: var(--stroke-color);
+        stroke-width: 4;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: draw 3s ease-out forwards, 
+                   fill 0.5s ease-out forwards 3s;
+        fill: transparent;
+    }
+
+    @keyframes draw {
+        to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes fill {
+        to { fill: var(--fill-color); }
+    }
+
+    #glow-effect {
+        opacity: 0;
+        animation: glow 2s ease-out 3.5s forwards;
+    }
+
+    @keyframes glow {
+        0% { opacity: 0; transform: scale(0.5); }
+        50% { opacity: 1; transform: scale(1.2); }
+        100% { opacity: 0; transform: scale(1.5); }
+    }
+</style>
+
+<filter id="glow">
+    <feGaussianBlur stdDeviation="8" result="glow"/>
+    <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+</filter>
+
+<g transform="translate(0,76) scale(0.1,-0.1)" filter="url(#glow)">
+    <!-- Lettera P -->
+    <path class="letter" d="M0 435 l0 -325 55 0 55 0 0 165 0 165 160 0 160 0 0 55 0 55 55 0 55
+    0 0 50 0 50 -55 0 -55 0 0 55 0 55 -215 0 -215 0 0 -325z m430 165 l0 -50
+    -160 0 -160 0 0 50 0 50 160 0 160 0 0 -50z"/>
+
+    <!-- Lettera H -->
+    <path class="letter" d="M600 435 l0 -325 50 0 49 0 3 108 3 107 53 3 52 3 0 55 0 54 55 0 55
+    0 0 -165 0 -165 55 0 55 0 0 165 0 165 -55 0 -55 0 0 55 0 55 -55 0 -55 0 0
+    -55 0 -55 -55 0 -55 0 0 160 0 160 -50 0 -50 0 0 -325z"/>
+
+    <!-- Lettera O -->
+    <path class="letter" d="M1190 545 l0 -55 -55 0 -55 0 0 -135 0 -135 55 0 55 0 0 -55 0 -55
+    110 0 110 0 0 55 0 55 55 0 55 0 0 135 0 135 -55 0 -55 0 0 55 0 55 -110 0
+    -110 0 0 -55z m220 -190 l0 -135 -110 0 -110 0 0 135 0 135 110 0 110 0 0
+    -135z"/>
+
+    <!-- Lettera E -->
+    <path class="letter" d="M1680 545 l0 -55 -55 0 -55 0 0 -135 0 -135 55 0 55 0 0 -55 0 -55
+    160 0 160 0 0 80 0 80 -50 0 c-47 0 -50 -2 -50 -25 l0 -25 -110 0 -110 0 0 55
+    0 55 110 0 110 0 0 25 c0 23 3 25 50 25 l50 0 0 110 0 110 -160 0 -160 0 0
+    -55z m220 -80 l0 -25 -110 0 -110 0 0 25 0 25 110 0 110 0 0 -25z"/>
+  
+    <!-- Lettera Y -->
+    <path class="letter" d="M2060 465 l0 -135 55 0 55 0 0 -55 0 -55 105 0 105 0 0 -55 0 -55
+    -160 0 -160 0 0 -55 0 -55 160 0 160 0 0 55 0 55 55 0 55 0 0 245 0 245 -55 0
+    -55 0 0 -135 0 -135 -105 0 -105 0 0 135 0 135 -55 0 -55 0 0 -135z"/>
+  
+    <!-- Lettera U -->
+    <path class="letter" d="M2550 410 l0 -190 50 0 50 0 0 -55 0 -55 165 0 165 0 0 245 0 245
+    -55 0 -55 0 0 -190 0 -190 -110 0 -110 0 0 190 0 190 -50 0 -50 0 0 -190z"/>
+</g>
+
+<circle id="glow-effect" cx="173.5" cy="38" r="150" fill="var(--glow-color)"/>
+</svg>
