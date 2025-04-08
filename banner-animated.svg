@@ -3,16 +3,16 @@ width="347" height="76" viewBox="0 0 347 76"
 preserveAspectRatio="xMidYMid meet">
 <style>
     :root {
-        --stroke-color: #000;
-        --fill-color: #000;
-        --glow-color: rgba(0,0,0,0.3);
+        --stroke-color: #000000;
+        --fill-color: #000000;
+        --glow-color: rgba(0,0,0,0.25);
     }
 
     @media (prefers-color-scheme: dark) {
         :root {
-            --stroke-color: #fff;
-            --fill-color: #fff;
-            --glow-color: rgba(255,255,255,0.3);
+            --stroke-color: #ffffff;
+            --fill-color: #ffffff;
+            --glow-color: rgba(255,255,255,0.25);
         }
     }
 
@@ -20,70 +20,67 @@ preserveAspectRatio="xMidYMid meet">
         fill: transparent;
         stroke: var(--stroke-color);
         stroke-width: 4;
-        stroke-dasharray: 1572;
-        stroke-dashoffset: 1572;
-        animation: draw 3s linear forwards;
+        stroke-dasharray: var(--path-length);
+        stroke-dashoffset: var(--path-length);
+        animation: 
+            draw 2.8s cubic-bezier(0.65, 0, 0.35, 1) forwards,
+            fill 0.1ms linear forwards 2.8s;
     }
 
     @keyframes draw {
-        90% {
-            stroke-dashoffset: 0;
-            fill: transparent;
-        }
-        100% {
-            stroke-dashoffset: 0;
-            fill: var(--fill-color);
-        }
+        to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes fill {
+        to { fill: var(--fill-color); }
     }
 
     #glow-effect {
         opacity: 0;
-        animation: glowPulse 1.5s ease-out 3.2s forwards;
+        animation: 
+            glow 1.2s cubic-bezier(0.4, 0, 0.2, 1) 3s forwards;
     }
 
-    @keyframes glowPulse {
-        0% {
-            transform: scale(0);
-            opacity: 0.8;
-        }
-        50% {
-            transform: scale(1.5);
-            opacity: 0.4;
-        }
-        100% {
-            transform: scale(2.5);
-            opacity: 0;
-        }
+    @keyframes glow {
+        0% { transform: scale(0.8); opacity: 0.8; }
+        70% { transform: scale(1.6); opacity: 0.4; }
+        100% { transform: scale(2.2); opacity: 0; }
     }
 </style>
 
 <g transform="translate(0,76) scale(0.1,-0.1)" class="logo">
-    <path d="M0 435 l0 -325 55 0 55 0 0 165 0 165 160 0 160 0 0 55 0 55 55 0 55
-    0 0 50 0 50 -55 0 -55 0 0 55 0 55 -215 0 -215 0 0 -325z m430 165 l0 -50
-    -160 0 -160 0 0 50 0 50 160 0 160 0 0 -50z"/>
-    <path d="M600 435 l0 -325 50 0 49 0 3 108 3 107 53 3 52 3 0 55 0 54 55 0 55
-    0 0 -165 0 -165 55 0 55 0 0 165 0 165 -55 0 -55 0 0 55 0 55 -55 0 -55 0 0
-    -55 0 -55 -55 0 -55 0 0 160 0 160 -50 0 -50 0 0 -325z"/>
-    <path d="M1190 545 l0 -55 -55 0 -55 0 0 -135 0 -135 55 0 55 0 0 -55 0 -55
-    110 0 110 0 0 55 0 55 55 0 55 0 0 135 0 135 -55 0 -55 0 0 55 0 55 -110 0
-    -110 0 0 -55z m220 -190 l0 -135 -110 0 -110 0 0 135 0 135 110 0 110 0 0
-    -135z"/>
-    <path d="M1680 545 l0 -55 -55 0 -55 0 0 -135 0 -135 55 0 55 0 0 -55 0 -55
-    160 0 160 0 0 80 0 80 -50 0 c-47 0 -50 -2 -50 -25 l0 -25 -110 0 -110 0 0 55
-    0 55 110 0 110 0 0 25 c0 23 3 25 50 25 l50 0 0 110 0 110 -160 0 -160 0 0
-    -55z m220 -80 l0 -25 -110 0 -110 0 0 25 0 25 110 0 110 0 0 -25z"/>
-    <path d="M2060 465 l0 -135 55 0 55 0 0 -55 0 -55 105 0 105 0 0 -55 0 -55
-    -160 0 -160 0 0 -55 0 -55 160 0 160 0 0 55 0 55 55 0 55 0 0 245 0 245 -55 0
-    -55 0 0 -135 0 -135 -105 0 -105 0 0 135 0 135 -55 0 -55 0 0 -135z"/>
-    <path d="M2550 410 l0 -190 50 0 50 0 0 -55 0 -55 165 0 165 0 0 245 0 245
-    -55 0 -55 0 0 -190 0 -190 -110 0 -110 0 0 190 0 190 -50 0 -50 0 0 -190z"/>
+    <!-- Path P -->
+    <path style="--path-length: 835;" 
+          d="M0 435 l0 -325 55 0 55 0 0 165 0 165 160 0 160 0 0 55 0 55 55 0 55 0 0 50 0 50 -55 0 -55 0 0 55 0 55 -215 0 -215 0 0 -325z m430 165 l0 -50 -160 0 -160 0 0 50 0 50 160 0 160 0 0 -50z"/>
+
+    <!-- Path H -->
+    <path style="--path-length: 920;" 
+          d="M600 435 l0 -325 50 0 49 0 3 108 3 107 53 3 52 3 0 55 0 54 55 0 55 0 0 -165 0 -165 55 0 55 0 0 165 0 165 -55 0 -55 0 0 55 0 55 -55 0 -55 0 0 -55 0 -55 -55 0 -55 0 0 160 0 160 -50 0 -50 0 0 -325z"/>
+
+    <!-- Path O -->
+    <path style="--path-length: 780;" 
+          d="M1190 545 l0 -55 -55 0 -55 0 0 -135 0 -135 55 0 55 0 0 -55 0 -55 110 0 110 0 0 55 0 55 55 0 55 0 0 135 0 135 -55 0 -55 0 0 55 0 55 -110 0 -110 0 0 -55z m220 -190 l0 -135 -110 0 -110 0 0 135 0 135 110 0 110 0 0 -135z"/>
+
+    <!-- Path E -->
+    <path style="--path-length: 865;" 
+          d="M1680 545 l0 -55 -55 0 -55 0 0 -135 0 -135 55 0 55 0 0 -55 0 -55 160 0 160 0 0 80 0 80 -50 0 c-47 0 -50 -2 -50 -25 l0 -25 -110 0 -110 0 0 55 0 55 110 0 110 0 0 25 c0 23 3 25 50 25 l50 0 0 110 0 110 -160 0 -160 0 0 -55z m220 -80 l0 -25 -110 0 -110 0 0 25 0 25 110 0 110 0 0 -25z"/>
+
+    <!-- Path Y -->
+    <path style="--path-length: 950;" 
+          d="M2060 465 l0 -135 55 0 55 0 0 -55 0 -55 105 0 105 0 0 -55 0 -55 -160 0 -160 0 0 -55 0 -55 160 0 160 0 0 55 0 55 55 0 55 0 0 245 0 245 -55 0 -55 0 0 -135 0 -135 -105 0 -105 0 0 135 0 135 -55 0 -55 0 0 -135z"/>
+
+    <!-- Path U -->
+    <path style="--path-length: 890;" 
+          d="M2550 410 l0 -190 50 0 50 0 0 -55 0 -55 165 0 165 0 0 245 0 245 -55 0 -55 0 0 -190 0 -190 -110 0 -110 0 0 190 0 190 -50 0 -50 0 0 -190z"/>
 </g>
 
-<radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-    <stop offset="0%" stop-color="var(--glow-color)"/>
-    <stop offset="100%" stop-color="transparent"/>
-</radialGradient>
+<defs>
+    <radialGradient id="glow-gradient" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="var(--glow-color)"/>
+        <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+</defs>
 
-<circle id="glow-effect" cx="50%" cy="50%" r="40%" fill="url(#glow)" 
-        opacity="0" style="transform-origin: center"/>
+<circle id="glow-effect" cx="50%" cy="50%" r="45%" 
+        fill="url(#glow-gradient)" style="transform-origin: center"/>
 </svg>
