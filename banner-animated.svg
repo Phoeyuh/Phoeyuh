@@ -7,7 +7,7 @@
   <style>
     path {
       fill: transparent;
-      stroke: black;
+      stroke: white;
       stroke-width: 6; /* Bordo più sottile */
       stroke-dasharray: 10000;
       stroke-dashoffset: 10000;
@@ -25,7 +25,7 @@
         fill: transparent;
       }
       100% {
-        fill: black;
+        fill: white;
       }
     }
   </style>
