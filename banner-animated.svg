@@ -22,21 +22,23 @@ preserveAspectRatio="xMidYMid meet">
         stroke-width: 4;
         stroke-dasharray: 1572;
         stroke-dashoffset: 1572;
-        animation: draw 3s ease-out forwards, 
-                   fillColor 1s ease-out forwards 3s;
+        animation: draw 3s linear forwards;
     }
 
     @keyframes draw {
-        to { stroke-dashoffset: 0; }
-    }
-
-    @keyframes fillColor {
-        to { fill: var(--fill-color); }
+        90% {
+            stroke-dashoffset: 0;
+            fill: transparent;
+        }
+        100% {
+            stroke-dashoffset: 0;
+            fill: var(--fill-color);
+        }
     }
 
     #glow-effect {
         opacity: 0;
-        animation: glowPulse 1.5s ease-out 3.5s forwards;
+        animation: glowPulse 1.5s ease-out 3.2s forwards;
     }
 
     @keyframes glowPulse {
