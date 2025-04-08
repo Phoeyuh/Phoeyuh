@@ -8,6 +8,7 @@
     path {
       fill: transparent;
       stroke: white;
+			fill: white;
       stroke-width: 6; /* Bordo più sottile */
       stroke-dasharray: 10000;
       stroke-dashoffset: 10000;
