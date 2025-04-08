@@ -1,4 +1,4 @@
-[![Animated Logo](https://raw.githubusercontent.com/Phoeyuh/main/banner-animated.svg)](https://github.com/Phoeyuh)
+<img src="banner-animated.svg" width="100%" style="aspect-ratio: 2 / 1; object-fit: contains;">
  
 # 🏄‍♂️ Hi there, I'm Kevin - aka Phoeyuh 👋 
 
