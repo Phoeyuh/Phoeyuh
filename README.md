@@ -1,6 +1,6 @@
 <img src="banner.svg" width="100%" style="aspect-ratio: 2 / 1; object-fit: contain;">
 
-# Hello, I'm Phoeyuh! 👋
+# Hello, I'm Phoeyuh!  
 > Welcome to my GitHub profile! 😄  
 > Here you can see my GitHub stats and get a glimpse of my coding journey. 🚀
 
@@ -8,6 +8,10 @@
 
 <p align="center">
   <img src="https://skillicons.dev/icons?i=html,css,js,php,java,python,mysql" />
+</p>
+
+<p align="left">
+  <img src="pig.gif" alt="maialino" width="100" />
 </p>
 
 > [!NOTE]
