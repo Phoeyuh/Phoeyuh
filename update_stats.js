@@ -37,18 +37,77 @@ async function updateStats() {
       return `${part1} | ${part2}`;
     };
 
-    const row1 = createStatLine('. Repos:', userData.public_repos, 'Stars:', totalStars);
-    const row2 = createStatLine('. Followers:', userData.followers, 'Following:', userData.following);
-    const row3 = createStatLine('. Forks:', totalForks, 'Gists:', userData.public_gists);
+    // --- LE TUE INFORMAZIONI ---
+    const statsLines = [
+      "- GitHub Stats --------------------------------------------------",
+      createStatLine('. Repos:', userData.public_repos, 'Stars:', totalStars),
+      createStatLine('. Followers:', userData.followers, 'Following:', userData.following),
+      createStatLine('. Forks:', totalForks, 'Gists:', userData.public_gists)
+    ];
 
-    const newStats = `\n- GitHub Stats --------------------------------------------------\n${row1}\n${row2}\n${row3}\n`;
+    const bioText = [
+      "Phoeyuh ---------------------------------------------------------",
+      ". OS: ................................................ Windows 10",
+      ". Host: ...................................... Lenovo LOQ 15IRX10",
+      ". Role: ............................ Computer Engineering Student",
+      ". IDE: .................................................. VS Code",
+      ". ",
+      ". Languages.Programming: .......... Java, Python, JavaScript, C++",
+      ". Languages.Computer: ........................... HTML, CSS, JSON",
+      ". Languages.Real: .............................. Italian, English",
+      ". ",
+      ". Hobbies.Software: .... Web Dev (Cloudflare, Firebase), Local AI",
+      ". Hobbies.Hardware: ............. Robotics, AI-Integrated Devices",
+      ". ",
+      "- Contact -------------------------------------------------------",
+      ". Email: .................................... phoeyuhhh@gmail.com",
+      ". GitHub: ............................................... Phoeyuh",
+      ". "
+    ];
+
+    const asciiArt = [
+      "                ,@@@@@gg@ $;                 ",
+      "             g @@@@@@@@@@@@@@ g,             ",
+      "           ,@@@@@@@@@@@@@@@@@@@@@            ",
+      "          , @@@@@@@@@@@@@@@@@@@@@@ K         ",
+      "      ~@  @@@@@@@@@@@@@@@@@@@@@@@@@@g        ",
+      "       $ @@@@@@@@@@@@@@@@@@@@@@@@@@@\"        ",
+      "        B @@@@@@@@@@@@@@@@@@@@@@@@@          ",
+      "          @@     $$$|     @@     @           ",
+      "          @@@l$$$$$$@\" |$&  $$$$&@@          ",
+      "          & Kl&$& W&ZL ||$$ $&&Ll            ",
+      "          ]$L-`    '|` '\"\"'     \"$@          ",
+      "           &L-     ;|   \"L;    ||T`          ",
+      "            $lLLgM||&@wy&||&&g||k\"           ",
+      "             '$$@gg,,,,,,gggl$&|             ",
+      "              ]$@Ll&@l||@&|l$$&              ",
+      "              (&$@$LI|||||l$$$T              ",
+      "              #@l$$@@llg@$$$&&lk             ",
+      "             ,$$$$$$&@@&@@$$$$$$$ N,         ",
+      "          ,g &$$&$$$$$ll&$$$$$$$$$ @ g       ",
+      "       ,@@@@@@$$$$$$$$@@@$$$$$$$$ @@@@@@B,   ",
+      "    ,g @@@@@@@ $$$$$$$$$$$$$$$$ @@@@@@@@@@@@N"
+    ];
+
+    const rightColumn = [...bioText, ...statsLines];
+    
+    let combinedText = "<!-- PROFILE:START -->\n```yaml\n";
+
+    const totalLines = Math.max(asciiArt.length, rightColumn.length);
+    for (let i = 0; i < totalLines; i++) {
+      const left = asciiArt[i] || "                                             ";
+      const right = rightColumn[i] || "";
+      combinedText += left + "   " + right + "\n";
+    }
+    
+    combinedText += "```\n<!-- PROFILE:END -->";
 
     let readmeContent = fs.readFileSync('README.md', 'utf-8');
-    const regex = /(<!-- STATS:START -->)[\s\S]*?(<!-- STATS:END -->)/;
-    readmeContent = readmeContent.replace(regex, `$1${newStats}<!-- STATS:END -->`);
+    const regex = /<!-- PROFILE:START -->[\s\S]*?<!-- PROFILE:END -->/;
+    readmeContent = readmeContent.replace(regex, combinedText);
 
     fs.writeFileSync('README.md', readmeContent);
-    console.log("Aggiornamento completato!");
+    console.log("README colorato generato con successo!");
 
   } catch (error) {
     console.error("Errore:", error);
