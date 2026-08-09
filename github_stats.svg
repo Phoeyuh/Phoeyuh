@@ -1,47 +1,52 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440" font-family="Consolas, 'Courier New', monospace" font-size="14px">
+  <style>
+    .key {fill: #E3B341;}
+    .val {fill: #79C0FF;}
+    .cc {fill: #8B949E;}
+    text, tspan {white-space: pre;}
+  </style>
   <rect width="100%" height="100%" fill="#0D1117" rx="10" />
-  <g font-family="Consolas, 'Courier New', monospace" font-size="14px">
-    <text x="30" y="35" fill="#C9D1D9" xml:space="preserve">                ,@@@@@gg@ $;                 </text>
-    <text x="30" y="54" fill="#C9D1D9" xml:space="preserve">             g @@@@@@@@@@@@@@ g,             </text>
-    <text x="30" y="73" fill="#C9D1D9" xml:space="preserve">           ,@@@@@@@@@@@@@@@@@@@@@            </text>
-    <text x="30" y="92" fill="#C9D1D9" xml:space="preserve">          , @@@@@@@@@@@@@@@@@@@@@@ K         </text>
-    <text x="30" y="111" fill="#C9D1D9" xml:space="preserve">      ~@  @@@@@@@@@@@@@@@@@@@@@@@@@@g        </text>
-    <text x="30" y="130" fill="#C9D1D9" xml:space="preserve">       $ @@@@@@@@@@@@@@@@@@@@@@@@@@@"        </text>
-    <text x="30" y="149" fill="#C9D1D9" xml:space="preserve">        B @@@@@@@@@@@@@@@@@@@@@@@@@          </text>
-    <text x="30" y="168" fill="#C9D1D9" xml:space="preserve">          @@     $$$|     @@     @           </text>
-    <text x="30" y="187" fill="#C9D1D9" xml:space="preserve">          @@@l$$$$$$@" |$&amp;  $$$$&amp;@@          </text>
-    <text x="30" y="206" fill="#C9D1D9" xml:space="preserve">          &amp; Kl&amp;$&amp; W&amp;ZL ||$$ $&amp;&amp;Ll            </text>
-    <text x="30" y="225" fill="#C9D1D9" xml:space="preserve">          ]$L-`    '|` '""'     "$@          </text>
-    <text x="30" y="244" fill="#C9D1D9" xml:space="preserve">           &amp;L-     ;|   "L;    ||T`          </text>
-    <text x="30" y="263" fill="#C9D1D9" xml:space="preserve">            $lLLgM||&amp;@wy&amp;||&amp;&amp;g||k"           </text>
-    <text x="30" y="282" fill="#C9D1D9" xml:space="preserve">             '$$@gg,,,,,,gggl$&amp;|             </text>
-    <text x="30" y="301" fill="#C9D1D9" xml:space="preserve">              ]$@Ll&amp;@l||@&amp;|l$$&amp;              </text>
-    <text x="30" y="320" fill="#C9D1D9" xml:space="preserve">              (&amp;$@$LI|||||l$$$T              </text>
-    <text x="30" y="339" fill="#C9D1D9" xml:space="preserve">              #@l$$@@llg@$$$&amp;&amp;lk             </text>
-    <text x="30" y="358" fill="#C9D1D9" xml:space="preserve">             ,$$$$$$&amp;@@&amp;@@$$$$$$$ N,         </text>
-    <text x="30" y="377" fill="#C9D1D9" xml:space="preserve">          ,g &amp;$$&amp;$$$$$ll&amp;$$$$$$$$$ @ g       </text>
-    <text x="30" y="396" fill="#C9D1D9" xml:space="preserve">       ,@@@@@@$$$$$$$$@@@$$$$$$$$ @@@@@@B,   </text>
-    <text x="30" y="415" fill="#C9D1D9" xml:space="preserve">    ,g @@@@@@@ $$$$$$$$$$$$$$$$ @@@@@@@@@@@@N</text>
-    <text x="420" y="35" xml:space="preserve"><tspan fill="#C9D1D9">Phoeyuh </tspan><tspan fill="#8B949E">---------------------------------------------------------</tspan></text>
-    <text x="420" y="54" xml:space="preserve"><tspan fill="#E3B341">. OS:</tspan><tspan fill="#8B949E"> ................................................ </tspan><tspan fill="#79C0FF">Windows 10</tspan></text>
-    <text x="420" y="73" xml:space="preserve"><tspan fill="#E3B341">. Host:</tspan><tspan fill="#8B949E"> ...................................... </tspan><tspan fill="#79C0FF">Lenovo LOQ 15IRX10</tspan></text>
-    <text x="420" y="92" xml:space="preserve"><tspan fill="#E3B341">. Role:</tspan><tspan fill="#8B949E"> ............................ </tspan><tspan fill="#79C0FF">Computer Engineering Student</tspan></text>
-    <text x="420" y="111" xml:space="preserve"><tspan fill="#E3B341">. IDE:</tspan><tspan fill="#8B949E"> .................................................. </tspan><tspan fill="#79C0FF">VS Code</tspan></text>
-    <text x="420" y="130" xml:space="preserve"><tspan fill="#8B949E">.</tspan></text>
-    <text x="420" y="149" xml:space="preserve"><tspan fill="#E3B341">. Languages.Programming:</tspan><tspan fill="#8B949E"> .......... </tspan><tspan fill="#79C0FF">Java, Python, JavaScript, C++</tspan></text>
-    <text x="420" y="168" xml:space="preserve"><tspan fill="#E3B341">. Languages.Computer:</tspan><tspan fill="#8B949E"> ........................... </tspan><tspan fill="#79C0FF">HTML, CSS, JSON</tspan></text>
-    <text x="420" y="187" xml:space="preserve"><tspan fill="#E3B341">. Languages.Real:</tspan><tspan fill="#8B949E"> .............................. </tspan><tspan fill="#79C0FF">Italian, English</tspan></text>
-    <text x="420" y="206" xml:space="preserve"><tspan fill="#8B949E">.</tspan></text>
-    <text x="420" y="225" xml:space="preserve"><tspan fill="#E3B341">. Hobbies.Software:</tspan><tspan fill="#8B949E"> .... </tspan><tspan fill="#79C0FF">Web Dev (Cloudflare, Firebase), Local AI</tspan></text>
-    <text x="420" y="244" xml:space="preserve"><tspan fill="#E3B341">. Hobbies.Hardware:</tspan><tspan fill="#8B949E"> ............. </tspan><tspan fill="#79C0FF">Robotics, AI-Integrated Devices</tspan></text>
-    <text x="420" y="263" xml:space="preserve"><tspan fill="#8B949E">.</tspan></text>
-    <text x="420" y="282" xml:space="preserve"><tspan fill="#C9D1D9">- Contact </tspan><tspan fill="#8B949E">-------------------------------------------------------</tspan></text>
-    <text x="420" y="301" xml:space="preserve"><tspan fill="#E3B341">. Email:</tspan><tspan fill="#8B949E"> .................................... </tspan><tspan fill="#79C0FF">phoeyuhhh@gmail.com</tspan></text>
-    <text x="420" y="320" xml:space="preserve"><tspan fill="#E3B341">. GitHub:</tspan><tspan fill="#8B949E"> ............................................... </tspan><tspan fill="#79C0FF">Phoeyuh</tspan></text>
-    <text x="420" y="339" xml:space="preserve"><tspan fill="#8B949E">.</tspan></text>
-    <text x="420" y="358" xml:space="preserve"><tspan fill="#C9D1D9">- GitHub Stats </tspan><tspan fill="#8B949E">--------------------------------------------------</tspan></text>
-    <text x="420" y="377" xml:space="preserve"><tspan fill="#E3B341">. Repos:</tspan><tspan fill="#8B949E"> .................. </tspan><tspan fill="#79C0FF">3</tspan><tspan fill="#8B949E"> | </tspan><tspan fill="#E3B341">Stars:</tspan><tspan fill="#8B949E"> ........................ </tspan><tspan fill="#79C0FF">0</tspan></text>
-    <text x="420" y="396" xml:space="preserve"><tspan fill="#E3B341">. Followers:</tspan><tspan fill="#8B949E"> .............. </tspan><tspan fill="#79C0FF">3</tspan><tspan fill="#8B949E"> | </tspan><tspan fill="#E3B341">Following:</tspan><tspan fill="#8B949E"> .................... </tspan><tspan fill="#79C0FF">9</tspan></text>
-    <text x="420" y="415" xml:space="preserve"><tspan fill="#E3B341">. Forks:</tspan><tspan fill="#8B949E"> .................. </tspan><tspan fill="#79C0FF">0</tspan><tspan fill="#8B949E"> | </tspan><tspan fill="#E3B341">Gists:</tspan><tspan fill="#8B949E"> ........................ </tspan><tspan fill="#79C0FF">0</tspan></text>
-  </g>
+  <text x="30" y="35" fill="#C9D1D9">                ,@@@@@gg@ $;                 </text>
+  <text x="30" y="54" fill="#C9D1D9">             g @@@@@@@@@@@@@@ g,             </text>
+  <text x="30" y="73" fill="#C9D1D9">           ,@@@@@@@@@@@@@@@@@@@@@            </text>
+  <text x="30" y="92" fill="#C9D1D9">          , @@@@@@@@@@@@@@@@@@@@@@ K         </text>
+  <text x="30" y="111" fill="#C9D1D9">      ~@  @@@@@@@@@@@@@@@@@@@@@@@@@@g        </text>
+  <text x="30" y="130" fill="#C9D1D9">       $ @@@@@@@@@@@@@@@@@@@@@@@@@@@&quot;        </text>
+  <text x="30" y="149" fill="#C9D1D9">        B @@@@@@@@@@@@@@@@@@@@@@@@@          </text>
+  <text x="30" y="168" fill="#C9D1D9">          @@     $$$|     @@     @           </text>
+  <text x="30" y="187" fill="#C9D1D9">          @@@l$$$$$$@&quot; |$&amp;  $$$$&amp;@@          </text>
+  <text x="30" y="206" fill="#C9D1D9">          &amp; Kl&amp;$&amp; W&amp;ZL ||$$ $&amp;&amp;Ll            </text>
+  <text x="30" y="225" fill="#C9D1D9">          ]$L-`    &apos;|` &apos;&quot;&quot;&apos;     &quot;$@          </text>
+  <text x="30" y="244" fill="#C9D1D9">           &amp;L-     ;|   &quot;L;    ||T`          </text>
+  <text x="30" y="263" fill="#C9D1D9">            $lLLgM||&amp;@wy&amp;||&amp;&amp;g||k&quot;           </text>
+  <text x="30" y="282" fill="#C9D1D9">             &apos;$$@gg,,,,,,gggl$&amp;|             </text>
+  <text x="30" y="301" fill="#C9D1D9">              ]$@Ll&amp;@l||@&amp;|l$$&amp;              </text>
+  <text x="30" y="320" fill="#C9D1D9">              (&amp;$@$LI|||||l$$$T              </text>
+  <text x="30" y="339" fill="#C9D1D9">              #@l$$@@llg@$$$&amp;&amp;lk             </text>
+  <text x="30" y="358" fill="#C9D1D9">             ,$$$$$$&amp;@@&amp;@@$$$$$$$ N,         </text>
+  <text x="30" y="377" fill="#C9D1D9">          ,g &amp;$$&amp;$$$$$ll&amp;$$$$$$$$$ @ g       </text>
+  <text x="30" y="396" fill="#C9D1D9">       ,@@@@@@$$$$$$$$@@@$$$$$$$$ @@@@@@B,   </text>
+  <text x="30" y="415" fill="#C9D1D9">    ,g @@@@@@@ $$$$$$$$$$$$$$$$ @@@@@@@@@@@@N</text>
+  <text x="420" y="35"><tspan fill="#C9D1D9">Phoeyuh </tspan><tspan class="cc">---------------------------------------------------------</tspan></text>
+  <text x="420" y="54"><tspan class="key">. OS:</tspan><tspan class="cc"> ................................................ </tspan><tspan class="val">Windows 10</tspan></text>
+  <text x="420" y="73"><tspan class="key">. Host:</tspan><tspan class="cc"> ...................................... </tspan><tspan class="val">Lenovo LOQ 15IRX10</tspan></text>
+  <text x="420" y="92"><tspan class="key">. Role:</tspan><tspan class="cc"> ............................ </tspan><tspan class="val">Computer Engineering Student</tspan></text>
+  <text x="420" y="111"><tspan class="key">. IDE:</tspan><tspan class="cc"> .................................................. </tspan><tspan class="val">VS Code</tspan></text>
+  <text x="420" y="130"><tspan class="cc">.</tspan></text>
+  <text x="420" y="149"><tspan class="key">. Languages.Programming:</tspan><tspan class="cc"> .......... </tspan><tspan class="val">Java, Python, JavaScript, C++</tspan></text>
+  <text x="420" y="168"><tspan class="key">. Languages.Computer:</tspan><tspan class="cc"> ........................... </tspan><tspan class="val">HTML, CSS, JSON</tspan></text>
+  <text x="420" y="187"><tspan class="key">. Languages.Real:</tspan><tspan class="cc"> .............................. </tspan><tspan class="val">Italian, English</tspan></text>
+  <text x="420" y="206"><tspan class="cc">.</tspan></text>
+  <text x="420" y="225"><tspan class="key">. Hobbies.Software:</tspan><tspan class="cc"> .... </tspan><tspan class="val">Web Dev (Cloudflare, Firebase), Local AI</tspan></text>
+  <text x="420" y="244"><tspan class="key">. Hobbies.Hardware:</tspan><tspan class="cc"> ............. </tspan><tspan class="val">Robotics, AI-Integrated Devices</tspan></text>
+  <text x="420" y="263"><tspan class="cc">.</tspan></text>
+  <text x="420" y="282"><tspan fill="#C9D1D9">- Contact </tspan><tspan class="cc">-------------------------------------------------------</tspan></text>
+  <text x="420" y="301"><tspan class="key">. Email:</tspan><tspan class="cc"> .................................... </tspan><tspan class="val">phoeyuhhh@gmail.com</tspan></text>
+  <text x="420" y="320"><tspan class="key">. GitHub:</tspan><tspan class="cc"> ............................................... </tspan><tspan class="val">Phoeyuh</tspan></text>
+  <text x="420" y="339"><tspan class="cc">.</tspan></text>
+  <text x="420" y="358"><tspan fill="#C9D1D9">- GitHub Stats </tspan><tspan class="cc">--------------------------------------------------</tspan></text>
+  <text x="420" y="377"><tspan class="key">. Repos:</tspan><tspan class="cc"> .................. </tspan><tspan class="val">3</tspan><tspan class="cc"> | </tspan><tspan class="key">Stars:</tspan><tspan class="cc"> ........................ </tspan><tspan class="val">0</tspan></text>
+  <text x="420" y="396"><tspan class="key">. Followers:</tspan><tspan class="cc"> .............. </tspan><tspan class="val">3</tspan><tspan class="cc"> | </tspan><tspan class="key">Following:</tspan><tspan class="cc"> .................... </tspan><tspan class="val">9</tspan></text>
+  <text x="420" y="415"><tspan class="key">. Forks:</tspan><tspan class="cc"> .................. </tspan><tspan class="val">0</tspan><tspan class="cc"> | </tspan><tspan class="key">Gists:</tspan><tspan class="cc"> ........................ </tspan><tspan class="val">0</tspan></text>
 </svg>
