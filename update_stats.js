@@ -24,17 +24,21 @@ async function updateStats() {
       totalForks += repo.forks_count;
     });
 
+    const escapeXml = (str) => {
+      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    };
+
     const createRow = (key, value) => {
-      const dotsLen = 65 - key.length - value.length - 2;
-      return `<tspan fill="#E3B341">${key}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, dotsLen))} </tspan><tspan fill="#79C0FF">${value}</tspan>`;
+      const dotsLen = 65 - key.length - String(value).length - 2;
+      return `<tspan fill="#E3B341">${escapeXml(key)}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, dotsLen))} </tspan><tspan fill="#79C0FF">${escapeXml(value)}</tspan>`;
     };
 
     const createDoubleRow = (k1, v1, k2, v2) => {
       const c1Dots = 29 - k1.length - String(v1).length - 2;
-      const part1 = `<tspan fill="#E3B341">${k1}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, c1Dots))} </tspan><tspan fill="#79C0FF">${v1}</tspan>`;
+      const part1 = `<tspan fill="#E3B341">${escapeXml(k1)}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, c1Dots))} </tspan><tspan fill="#79C0FF">${escapeXml(v1)}</tspan>`;
       
       const c2Dots = 33 - k2.length - String(v2).length - 2;
-      const part2 = `<tspan fill="#E3B341">${k2}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, c2Dots))} </tspan><tspan fill="#79C0FF">${v2}</tspan>`;
+      const part2 = `<tspan fill="#E3B341">${escapeXml(k2)}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, c2Dots))} </tspan><tspan fill="#79C0FF">${escapeXml(v2)}</tspan>`;
       
       return `${part1}<tspan fill="#8B949E"> | </tspan>${part2}`;
     };
@@ -94,7 +98,7 @@ async function updateStats() {
 
     asciiArt.forEach((line, i) => {
       const y = 35 + (i * 19);
-      svg += `    <text x="30" y="${y}" fill="#C9D1D9" xml:space="preserve">${line}</text>\n`;
+      svg += `    <text x="30" y="${y}" fill="#C9D1D9" xml:space="preserve">${escapeXml(line)}</text>\n`;
     });
 
     rightColumn.forEach((line, i) => {
@@ -105,7 +109,7 @@ async function updateStats() {
     svg += `  </g>\n</svg>`;
 
     fs.writeFileSync('github_stats.svg', svg);
-    console.log("SVG generato con successo!");
+    console.log("SVG generato con successo e caratteri speciali sanificati!");
 
   } catch (error) {
     console.error("Errore:", error);
