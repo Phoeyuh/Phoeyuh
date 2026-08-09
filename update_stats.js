@@ -24,44 +24,49 @@ async function updateStats() {
       totalForks += repo.forks_count;
     });
 
-    const escapeXml = (str) => {
-      return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const escapeXml = (unsafe) => {
+      return String(unsafe)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
     };
 
     const createRow = (key, value) => {
       const dotsLen = 65 - key.length - String(value).length - 2;
-      return `<tspan fill="#E3B341">${escapeXml(key)}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, dotsLen))} </tspan><tspan fill="#79C0FF">${escapeXml(value)}</tspan>`;
+      return `<tspan class="key">${escapeXml(key)}</tspan><tspan class="cc"> ${'.'.repeat(Math.max(0, dotsLen))} </tspan><tspan class="val">${escapeXml(value)}</tspan>`;
     };
 
     const createDoubleRow = (k1, v1, k2, v2) => {
       const c1Dots = 29 - k1.length - String(v1).length - 2;
-      const part1 = `<tspan fill="#E3B341">${escapeXml(k1)}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, c1Dots))} </tspan><tspan fill="#79C0FF">${escapeXml(v1)}</tspan>`;
+      const part1 = `<tspan class="key">${escapeXml(k1)}</tspan><tspan class="cc"> ${'.'.repeat(Math.max(0, c1Dots))} </tspan><tspan class="val">${escapeXml(v1)}</tspan>`;
       
       const c2Dots = 33 - k2.length - String(v2).length - 2;
-      const part2 = `<tspan fill="#E3B341">${escapeXml(k2)}</tspan><tspan fill="#8B949E"> ${'.'.repeat(Math.max(0, c2Dots))} </tspan><tspan fill="#79C0FF">${escapeXml(v2)}</tspan>`;
+      const part2 = `<tspan class="key">${escapeXml(k2)}</tspan><tspan class="cc"> ${'.'.repeat(Math.max(0, c2Dots))} </tspan><tspan class="val">${escapeXml(v2)}</tspan>`;
       
-      return `${part1}<tspan fill="#8B949E"> | </tspan>${part2}`;
+      return `${part1}<tspan class="cc"> | </tspan>${part2}`;
     };
 
     const rightColumn = [
-      `<tspan fill="#C9D1D9">Phoeyuh </tspan><tspan fill="#8B949E">${'-'.repeat(57)}</tspan>`,
+      `<tspan fill="#C9D1D9">Phoeyuh </tspan><tspan class="cc">${'-'.repeat(57)}</tspan>`,
       createRow('. OS:', 'Windows 10'),
       createRow('. Host:', 'Lenovo LOQ 15IRX10'),
       createRow('. Role:', 'Computer Engineering Student'),
       createRow('. IDE:', 'VS Code'),
-      `<tspan fill="#8B949E">.</tspan>`,
+      `<tspan class="cc">.</tspan>`,
       createRow('. Languages.Programming:', 'Java, Python, JavaScript, C++'),
       createRow('. Languages.Computer:', 'HTML, CSS, JSON'),
       createRow('. Languages.Real:', 'Italian, English'),
-      `<tspan fill="#8B949E">.</tspan>`,
+      `<tspan class="cc">.</tspan>`,
       createRow('. Hobbies.Software:', 'Web Dev (Cloudflare, Firebase), Local AI'),
       createRow('. Hobbies.Hardware:', 'Robotics, AI-Integrated Devices'),
-      `<tspan fill="#8B949E">.</tspan>`,
-      `<tspan fill="#C9D1D9">- Contact </tspan><tspan fill="#8B949E">${'-'.repeat(55)}</tspan>`,
+      `<tspan class="cc">.</tspan>`,
+      `<tspan fill="#C9D1D9">- Contact </tspan><tspan class="cc">${'-'.repeat(55)}</tspan>`,
       createRow('. Email:', 'phoeyuhhh@gmail.com'),
       createRow('. GitHub:', 'Phoeyuh'),
-      `<tspan fill="#8B949E">.</tspan>`,
-      `<tspan fill="#C9D1D9">- GitHub Stats </tspan><tspan fill="#8B949E">${'-'.repeat(50)}</tspan>`,
+      `<tspan class="cc">.</tspan>`,
+      `<tspan fill="#C9D1D9">- GitHub Stats </tspan><tspan class="cc">${'-'.repeat(50)}</tspan>`,
       createDoubleRow('. Repos:', userData.public_repos, 'Stars:', totalStars),
       createDoubleRow('. Followers:', userData.followers, 'Following:', userData.following),
       createDoubleRow('. Forks:', totalForks, 'Gists:', userData.public_gists)
@@ -91,25 +96,31 @@ async function updateStats() {
       "    ,g @@@@@@@ $$$$$$$$$$$$$$$$ @@@@@@@@@@@@N"
     ];
 
-    let svg = `<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440">
+    let svg = `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440" font-family="Consolas, 'Courier New', monospace" font-size="14px">
+  <style>
+    .key {fill: #E3B341;}
+    .val {fill: #79C0FF;}
+    .cc {fill: #8B949E;}
+    text, tspan {white-space: pre;}
+  </style>
   <rect width="100%" height="100%" fill="#0D1117" rx="10" />
-  <g font-family="Consolas, 'Courier New', monospace" font-size="14px">
 `;
 
     asciiArt.forEach((line, i) => {
       const y = 35 + (i * 19);
-      svg += `    <text x="30" y="${y}" fill="#C9D1D9" xml:space="preserve">${escapeXml(line)}</text>\n`;
+      svg += `  <text x="30" y="${y}" fill="#C9D1D9">${escapeXml(line)}</text>\n`;
     });
 
     rightColumn.forEach((line, i) => {
       const y = 35 + (i * 19);
-      svg += `    <text x="420" y="${y}" xml:space="preserve">${line}</text>\n`;
+      svg += `  <text x="420" y="${y}">${line}</text>\n`;
     });
 
-    svg += `  </g>\n</svg>`;
+    svg += `</svg>`;
 
     fs.writeFileSync('github_stats.svg', svg);
-    console.log("SVG generato con successo e caratteri speciali sanificati!");
+    console.log("SVG generato con stile CSS e intestazione XML corretta!");
 
   } catch (error) {
     console.error("Errore:", error);
