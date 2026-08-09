@@ -10,10 +10,10 @@ async function updateStats() {
   };
 
   try {
-    const userRes = await fetch(`[https://api.github.com/users/$](https://api.github.com/users/$){username}`, { headers });
+    const userRes = await fetch(`https://api.github.com/users/${username}`, { headers });
     const userData = await userRes.json();
 
-    const reposRes = await fetch(`[https://api.github.com/users/$](https://api.github.com/users/$){username}/repos?per_page=100`, { headers });
+    const reposRes = await fetch(`https://api.github.com/users/${username}/repos?per_page=100`, { headers });
     const reposData = await reposRes.json();
     
     let totalStars = 0;
@@ -51,8 +51,8 @@ async function updateStats() {
           @@     $$$|     @@     @           
           @@@l$$$$$$@" |$&  $$$$&@@          
           & Kl&$& W&ZL ||$$ $&&Ll            
-          ]$L-`    '|` '""'     "$@          
-           &L-     ;|   "L;    ||T`          
+          ]$L-\`    '|\` '""'     "$@          
+           &L-     ;|   "L;    ||T\`          
             $lLLgM||&@wy&||&&g||k"           
              '$$@gg,,,,,,gggl$&|             
               ]$@Ll&@l||@&|l$$&              
@@ -86,7 +86,7 @@ ${row1}
 ${row2}
 ${row3}`;
 
-    // Assemblaggio della tabella HTML con i blocchi YAML integrati
+    // Assemblaggio della tabella HTML
     const newHtml = `<!-- PROFILE:START -->
 <div align="center">
   <table>
