@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="github_stats.svg" alt="Phoeyuh GitHub Stats" />
+  <img src="https://raw.githubusercontent.com/Phoeyuh/Phoeyuh/main/github_stats.svg" alt="Phoeyuh GitHub Stats" />
 </div>
